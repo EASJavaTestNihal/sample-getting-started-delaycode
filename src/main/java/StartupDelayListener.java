@@ -1,6 +1,7 @@
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
+import jakarta.servlet.annotation.WebListener;
+
 @WebListener
 public class StartupDelayListener implements ServletContextListener {
     @Override
@@ -14,6 +15,7 @@ public class StartupDelayListener implements ServletContextListener {
         }
         System.out.println("Delay completed");
     }
+    
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
         // No action needed
