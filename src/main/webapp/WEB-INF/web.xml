@@ -3,8 +3,10 @@
     xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
     version="5.0">
     <display-name>Liberty Project</display-name>
-
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+    <listener>
+        <listener-class>StartupDelayListener</listener-class>
+    </listener>
 </web-app>
