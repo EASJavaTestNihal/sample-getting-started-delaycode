@@ -25,7 +25,7 @@ public class StartupDelay {
         LOGGER.info("Starting application deployment delay of 60 seconds for MP_Health testing...");
         try {
             // 60-second delay
-            Thread.sleep(60000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             LOGGER.severe("Deployment delay was interrupted: " + e.getMessage());
